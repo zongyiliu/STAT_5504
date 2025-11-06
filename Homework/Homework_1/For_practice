@@ -1,0 +1,230 @@
+\documentclass[letterpaper]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\usepackage[dvipsnames]{xcolor}
+\colorlet{LightRubineRed}{RubineRed!70}
+\colorlet{Mycolor1}{green!10!orange}
+\definecolor{Mycolor2}{HTML}{00F9DE}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{capt-of}
+\usepackage{lipsum}
+\usepackage{fancyvrb}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{capt-of}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{hyperref} 
+\usepackage{xcolor} % For custom colors
+\lstset{
+	language=Python,                % Choose the language (e.g., Python, C, R)
+	basicstyle=\ttfamily\small, % Font size and type
+	keywordstyle=\color{blue},  % Keywords color
+	commentstyle=\color{gray},  % Comments color
+	stringstyle=\color{red},    % String color
+	numbers=left,               % Line numbers
+	numberstyle=\tiny\color{gray}, % Line number style
+	stepnumber=1,               % Numbering step
+	breaklines=true,            % Auto line break
+	backgroundcolor=\color{black!5}, % Light gray background
+	frame=single,               % Frame around the code
+}
+\usepackage{float}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+	\title{Homework 1, MATH 5504}
+	\author{Zongyi Liu}
+	\date{Fri, Oct 31, 2025}
+	\begin{document}
+		\maketitle
+		
+		\section{6.3}
+		\subsection{Question 1 (6.3.14)}
+		
+		Suppose that $X_1, \ldots, X_n$ form a random sample from a normal distribution with mean $0$ and unknown variance $\sigma^2$.
+		\begin{enumerate}
+			\item[(a)] Determine the asymptotic distribution of the statistic
+			\[
+			\left( \frac{1}{n} \sum_{i=1}^n X_i^2 \right)^{-1}.
+			\]
+			\item[(b)]  Find a variance stabilizing transformation for the statistic
+			\[
+			\frac{1}{n} \sum_{i=1}^n X_i^2.
+			\]
+		\end{enumerate}
+		
+		
+		\subsection{Question 2 (6.3.15)}
+		Let $X_1, X_2, \ldots$ be a sequence of i.i.d.\ random variables each having the uniform distribution on the interval $[0, \theta]$ for some real number $\theta > 0$. For each $n$, define $Y_n$ to be the maximum of $X_1, \ldots, X_n$.
+		
+		\clearpage
+		
+		\section{6.5}
+		\subsection{Question 3 (6.5.2)}
+		
+		Suppose that $X$ has a Poisson distribution with a very large mean $\lambda$. Explain why the distribution of $X$ can be approximated by the normal distribution with mean $\lambda$ and variance $\lambda$. In other words, explain why
+		\[
+		\frac{X - \lambda}{\lambda^{1/2}}
+		\]
+		converges in distribution, as $\lambda \to \infty$, to a random variable having the standard normal distribution.
+		
+		\section{7.2}
+		\subsection{Question 4 (7.2.10)}
+		Suppose that a single observation $X$ is to be taken from the uniform distribution on the interval 
+		\[
+		[\theta - \tfrac{1}{2}, \, \theta + \tfrac{1}{2}],
+		\]
+		the value of $\theta$ is unknown, and the prior distribution of $\theta$ is the uniform distribution on the interval $[10, 20]$. If the observed value of $X$ is $12$, what is the posterior distribution of $\theta$?
+		
+		\clearpage
+		
+		\section{7.3}
+		\subsection{Question 5 (7.3.10)}
+		Suppose that a random sample is to be taken from a normal distribution for which the value of the mean $\theta$ is unknown and the standard deviation is $2$, and the prior distribution of $\theta$ is a normal distribution for which the standard deviation is $1$. What is the smallest number of observations that must be included in the sample in order to reduce the standard deviation of the posterior distribution of $\theta$ to the value $0.1$?
+		
+		\subsection{Question 6 (7.3.18)}
+		The Pareto distribution with parameters $x_0$ and $\alpha$ ($x_0 > 0$ and $\alpha > 0$) is defined in Exercise 16 of Sec. 5.7. Show that the family of Pareto distributions is a conjugate family of prior distributions for samples from a uniform distribution on the interval $[0, \theta]$, where the value of the endpoint $\theta$ is unknown.
+		\clearpage
+		
+		\section{7.4}
+		\subsection{Question 7 (7.4.2)}
+		Suppose that the proportion $\theta$ of defective items in a large shipment is unknown, and the prior distribution of $\theta$ is the beta distribution for which the parameters are $\alpha = 5$ and $\beta = 10$. Suppose also that 20 items are selected at random from the shipment, and that exactly one of these items is found to be defective. If the squared error loss function is used, what is the Bayes estimate of $\theta$?
+		
+		\subsection{Question 8 (7.4.6)}
+		
+		Suppose that a random sample of size $n$ is taken from a Poisson distribution for which the value of the mean $\theta$ is unknown, and the prior distribution of $\theta$ is a gamma distribution for which the mean is $\mu_0$. Show that the mean of the posterior distribution of $\theta$ will be a weighted average having the form $\gamma_n \overline{X}_n + (1-\gamma_n)\mu_0$, and show that $\gamma_n \to 1$ as $n \to \infty$.
+		
+		
+		\subsection{Question 9 (7.4.12)}
+		Let $\theta$ denote the proportion of registered voters in a large city who are in favor of a certain proposition. Suppose that the value of $\theta$ is unknown, and two statisticians A and B assign to $\theta$ the following different prior p.d.f.'s $\xi_A(\theta)$ and $\xi_B(\theta)$, respectively:
+		\[
+		\xi_A(\theta) = 2\theta \quad \text{for } 0 < \theta < 1, \qquad
+		\xi_B(\theta) = 4\theta^3 \quad \text{for } 0 < \theta < 1.
+		\]
+		In a random sample of 1000 registered voters from the city, it is found that 710 are in favor of the proposition.
+		\begin{enumerate}
+			\item Find the posterior distribution that each statistician assigns to $\theta$.
+			\item Find the Bayes estimate for each statistician based on the squared error loss function.
+			\item Show that after the opinions of the 1000 registered voters in the random sample had been obtained, the Bayes estimates for the two statisticians could not possibly differ by more than 0.002, regardless of the number in the sample who were in favor of the proposition.
+		\end{enumerate}
+		
+		\clearpage
+		\section{7.5}
+		\subsection{Question 10 (7.5.6)}
+		Suppose that $X_1, \ldots, X_n$ form a random sample from a normal distribution for which the mean $\mu$ is known, but the variance $\sigma^2$ is unknown. Find the M.L.E. of $\sigma^2$.
+		
+		
+		\subsection{Question 11 (7.5.10)}
+		Suppose that $X_1, \ldots, X_n$ form a random sample from a distribution for which the p.d.f. $f(x|\theta)$ is as follows:
+		\[
+		f(x|\theta) = \frac{1}{2} e^{-|x - \theta|}, \quad \text{for } -\infty < x < \infty.
+		\]
+		Also, suppose that the value of $\theta$ is unknown ($-\infty < \theta < \infty$). Find the M.L.E. of $\theta$. \textit{Hint:} Compare this to the problem of minimizing M.A.E as in Theorem 4.5.3.
+		
+		
+		\subsection{Question 12 (7.5.12)}
+	     Suppose that a certain large population contains $k$ different types of individuals ($k \ge 2$), and let $\theta_i$ denote the proportion of individuals of type $i$, for $i = 1, \ldots, k$. Here, $0 \le \theta_i \le 1$ and $\theta_1 + \cdots + \theta_k = 1$. Suppose also that in a random sample of $n$ individuals from this population, exactly $n_i$ individuals are of type $i$, where $n_1 + \cdots + n_k = n$. Find the M.L.E.'s of $\theta_1, \ldots, \theta_k$.
+		
+		\clearpage
+		\section{7.6}
+		\subsection{Question 13 (7.6.4)}
+		 Suppose that the lifetime of a certain type of lamp has an exponential distribution for which the value of the parameter $\beta$ is unknown. A random sample of $n$ lamps of this type are tested for a period of $T$ hours and the number $X$ of lamps that fail during this period is observed, but the times at which the failures occurred are not noted. Determine the M.L.E. of $\beta$ based on the observed value of $X$.
+		
+
+		\subsection{Question 14 (7.6.6)}
+		Suppose that $X_1, \ldots, X_n$ form a random sample from a normal distribution for which both the mean and the variance are unknown. Find the M.L.E. of the 0.95 quantile of the distribution, that is, of the point $\theta$ such that $\Pr(X < \theta) = 0.95$.
+		
+		\subsection{Question 15 (7.6.8)}
+		Suppose that $X_1, \ldots, X_n$ form a random sample from a gamma distribution for which the p.d.f. is given by Eq.~(7.6.2). Find the M.L.E. of $\Gamma'(\alpha)/\Gamma(\alpha)$.
+		\clearpage
+		\subsection{Question 16 (7.6.10)}
+		Suppose that $X_1, \ldots, X_n$ form a random sample from a beta distribution for which both parameters $\alpha$ and $\beta$ are unknown. Show that the M.L.E.'s of $\alpha$ and $\beta$ satisfy the following equation:
+		\[
+		\frac{\Gamma'(\hat{\alpha})}{\Gamma(\hat{\alpha})} - \frac{\Gamma'(\hat{\beta})}{\Gamma(\hat{\beta})}
+		= \frac{1}{n} \sum_{i=1}^{n} \log \frac{X_i}{1 - X_i}.
+		\]
+		
+		\subsection{Question 17 (7.6.12)}
+		Suppose that $X_1, \ldots, X_n$ form a random sample from an exponential distribution for which the value of the parameter $\beta$ is unknown. Show that the sequence of M.L.E.'s of $\beta$ is a consistent sequence.
+		
+		\clearpage
+		\subsection{Question 18 (7.6.22)}
+		Let $X_1, \ldots, X_n$ be a random sample from the uniform distribution on the interval $[0, \theta]$.
+		\begin{enumerate}
+			\item Find the method of moments estimator of $\theta$.
+			\item Show that the method of moments estimator is not the M.L.E.
+		\end{enumerate}
+	
+		\subsection{Question 19 (7.6.24)}
+		Suppose that the two-dimensional vectors $(X_1, Y_1), (X_2, Y_2), \ldots, (X_n, Y_n)$ form a random sample from a bivariate normal distribution for which the means of $X$ and $Y$, the variances of $X$ and $Y$, and the correlation between $X$ and $Y$ are unknown. Show that the M.L.E.'s of these five parameters are as follows:
+		\[
+		\hat{\mu}_1 = \overline{X}_n, \qquad \hat{\mu}_2 = \overline{Y}_n,
+		\]
+		\[
+		\hat{\sigma}_1^2 = \frac{1}{n} \sum_{i=1}^{n} (X_i - \overline{X}_n)^2, \qquad
+		\hat{\sigma}_2^2 = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \overline{Y}_n)^2,
+		\]
+		\[
+		\hat{\rho} =
+		\frac{\sum_{i=1}^{n}(X_i - \overline{X}_n)(Y_i - \overline{Y}_n)}
+		{\left[\sum_{i=1}^{n}(X_i - \overline{X}_n)^2\right]^{1/2}
+			\left[\sum_{i=1}^{n}(Y_i - \overline{Y}_n)^2\right]^{1/2}}.
+		\]
+		\textit{Hint:} First, rewrite the joint p.d.f. of each pair $(X_i, Y_i)$ as the product of the marginal p.d.f. of $X_i$ and the conditional p.d.f. of $Y_i$ given $X_i$. Second, transform the parameters to $\mu_1, \sigma_1^2$ and
+		\[
+		\alpha = \mu_2 - \frac{\rho \sigma_2 \mu_1}{\sigma_1}, \qquad
+		\beta = \frac{\rho \sigma_2}{\sigma_1}, \qquad
+		\sigma_{2.1}^2 = (1 - \rho^2)\sigma_2^2.
+		\]
+		Third, maximize the likelihood function as a function of the new parameters. Finally, apply the invariance property of M.L.E.'s to find the M.L.E.'s of the original parameters. The above transformation greatly simplifies the maximization of the likelihood.
+		
+\clearpage
+		
+		\section{7.7}
+		\subsection{Question 20 (7.7.4)}
+		The normal distribution for which the mean $\mu$ is known and the variance $\sigma^2 > 0$ is unknown; $T = \sum_{i=1}^{n}(X_i - \mu)^2$.
+		
+		\section{7.8}
+		\subsection{Question 21 (7.8.4)}
+		The uniform distribution on the interval $[\theta, \theta + 3]$, where the value of $\theta$ is unknown ($-\infty < \theta < \infty$); $T_1 = \min\{X_1, \ldots, X_n\}$ and $T_2 = \max\{X_1, \ldots, X_n\}$.
+		
+		\clearpage
+		\section{7.9}
+		\subsection{Question 22 (7.9.2)}
+		Suppose that the random variables $X_1, \ldots, X_n$ form a random sample of size $n$ ($n \ge 2$) from the uniform distribution on the interval $[0, \theta]$, where the value of the parameter $\theta$ is unknown ($\theta > 0$) and must be estimated. Suppose also that for every estimator $\delta(X_1, \ldots, X_n)$, the M.S.E. $R(\theta, \delta)$ is defined by Eq.~(7.9.1). Explain why the estimator $\delta_1(X_1, \ldots, X_n) = 2\overline{X}_n$ is inadmissible.
+		
+		
+		\subsection{Question 23 (7.9.6)}
+		Suppose that $X_1, \ldots, X_n$ form a random sample of size $n$ ($n \ge 2$) from the gamma distribution with parameters $\alpha$ and $\beta$, where the value of $\alpha$ is unknown ($\alpha > 0$) and the value of $\beta$ is known. Explain why $\overline{X}_n$ is an inadmissible estimator of the mean of this distribution when the squared error loss function is used.
+		
+
+		
+\clearpage
+	
+	
+	\end{document}
