@@ -1,0 +1,374 @@
+\documentclass[letterpaper]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\DeclareMathOperator{\Var}{Var}
+\usepackage[dvipsnames]{xcolor}
+\colorlet{LightRubineRed}{RubineRed!70}
+\colorlet{Mycolor1}{green!10!orange}
+\definecolor{Mycolor2}{HTML}{00F9DE}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{capt-of}
+\usepackage{lipsum}
+\usepackage{fancyvrb}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{capt-of}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{hyperref} 
+\usepackage{xcolor} % For custom colors
+\lstset{
+	language=Python,                % Choose the language (e.g., Python, C, R)
+	basicstyle=\ttfamily\small, % Font size and type
+	keywordstyle=\color{blue},  % Keywords color
+	commentstyle=\color{gray},  % Comments color
+	stringstyle=\color{red},    % String color
+	numbers=left,               % Line numbers
+	numberstyle=\tiny\color{gray}, % Line number style
+	stepnumber=1,               % Numbering step
+	breaklines=true,            % Auto line break
+	backgroundcolor=\color{black!5}, % Light gray background
+	frame=single,               % Frame around the code
+}
+\usepackage{float}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+	\title{Homework 3, MATH 5504}
+	\author{Zongyi Liu}
+	\date{Mon, Dec 1, 2025}
+	\begin{document}
+		\maketitle
+		
+		\section{9.1}
+		\subsection{Question 1 (9.1.2)}
+		Suppose that $X_1, \ldots , X_n$ form a random sample from the uniform
+		distribution on the interval $[0,\theta]$, and that the following hypotheses
+		are to be tested:
+		\[
+		H_0: \theta \ge 2,\quad
+		H_1: \theta < 2.
+		\]
+		Let $Y_n = \max\{X_1,\ldots,X_n\}$, and consider a test procedure such that
+		the critical region contains all the outcomes for which $Y_n \le 1.5$.
+		
+		\begin{itemize}
+			\item[(a)] Determine the power function of the test.
+			\item[(b)] Determine the size of the test.
+		\end{itemize}
+	
+	\textbf{Answer}
+	\clearpage
+		
+		
+		
+		\subsection{Question 2 (9.1.4)}
+		Suppose that $X_1, \ldots , X_n$ form a random sample from the normal
+		distribution with unknown mean $\mu$ and known variance $1$. Suppose also that
+		$\mu_0$ is a certain specified number, and that the following hypotheses are to
+		be tested:
+		\[
+		H_0: \mu = \mu_0,\quad
+		H_1: \mu \ne \mu_0.
+		\]
+		Finally, suppose that the sample size $n$ is $25$, and consider a test
+		procedure such that $H_0$ is to be rejected if
+		\[
+		|\overline{X}_n - \mu_0| \ge c.
+		\]
+		Determine the value of $c$ such that the size of the test will be $0.05$.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 3 (9.1.6)}
+		Suppose that a single observation $X$ is to be taken from the uniform
+		distribution on the interval $\left[\theta-\tfrac12, \theta+\tfrac12\right]$,
+		and suppose that the following hypotheses are to be tested:
+		\[
+		H_0: \theta \le 3,\quad
+		H_1: \theta \ge 4.
+		\]
+		Construct a test procedure $\delta$ for which the power function has the
+		following values: $\pi(\theta|\delta)=0$ for $\theta\le 3$ and
+		$\pi(\theta|\delta)=1$ for $\theta\ge 4$.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 4 (9.1.8)}
+		Assume that $X_1, \ldots , X_n$ are i.i.d. with the normal distribution
+		that has mean $\mu$ and variance $1$. Suppose that we wish to test the hypotheses
+		\[
+		H_0: \mu \le \mu_0,\quad
+		H_1: \mu > \mu_0.
+		\]
+		Consider the test that rejects $H_0$ if $Z \ge c$, where $Z$ is defined in
+		Eq.\ (9.1.10).
+		
+		\begin{itemize}
+			\item[(a)] Show that $\Pr(Z \ge c \mid \mu)$ is an increasing function of $\mu$.
+			\item[(b)] Find $c$ to make the test have size $\alpha_0$.
+		\end{itemize}
+	
+	\textbf{Answer}
+	\clearpage
+
+		\subsection{Question 5 (9.1.12)}
+		Consider a single observation $X$ from a Cauchy distribution centered at $\theta$. That is, the p.d.f.\ of $X$ is
+		\[
+		f(x\mid\theta)=\frac{1}{\pi[1+(x-\theta)^2]},\qquad -\infty<x<\infty.
+		\]
+		Suppose that we wish to test the hypotheses
+		\[
+		H_0:\ \theta\le\theta_0,\qquad
+		H_1:\ \theta>\theta_0.
+		\]
+		Let $\delta_c$ be the test that rejects $H_0$ if $X\ge c$.
+		\begin{enumerate}
+			\item[(a)] Show that $\pi(\theta\mid\delta_c)$ is an increasing function of $\theta$.
+			\item[(b)] Find $c$ to make $\delta_c$ have size $0.05$.
+			\item[(c)] If $X=x$ is observed, find a formula for the $p$-value.
+		\end{enumerate}
+
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 6 (9.1.14)}
+			Let $X_1,\ldots,X_n$ be i.i.d.\ with the exponential distribution with parameter $\theta$. Suppose that we wish to test the hypotheses
+			\[
+			H_0:\ \theta\ge\theta_0,\qquad
+			H_1:\ \theta<\theta_0.
+			\]
+			Let $X=\sum_{i=1}^n X_i$. Let $\delta_c$ be the test that rejects $H_0$ if $X\ge c$.
+			\begin{enumerate}
+				\item[(a)] Show that $\pi(\theta\mid\delta_c)$ is a decreasing function of $\theta$.
+				\item[(b)] Find $c$ in order to make $\delta_c$ have size $\alpha_0$.
+				\item[(c)] Let $\theta_0=2$, $n=1$, and $\alpha_0=0.1$. Find the precise form of the test $\delta_c$ and sketch its power function.
+			\end{enumerate}
+		
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 7 (9.1.16)}
+		
+		Consider the confidence interval found in Exercise 5 in Sec.\ 8.5. Find the collection of hypothesis tests that are equivalent to this interval. That is, for each $c>0$, find a test $\delta_c$ of the null hypothesis $H_{0,c}:\ \sigma^2=c$ versus some alternative such that $\delta_c$ rejects $H_{0,c}$ if and only if $c$ is not in the interval. Write the test in terms of a test statistic $T=r(X)$ being in or out of some nonrandom interval that depends on $c$.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\section{9.2}
+		\subsection{Question 8 (9.2.8)}	
+		Suppose that a single observation $X$ is taken from the uniform distribution on the interval $[0,\theta]$, where the value of $\theta$ is unknown, and the following simple hypotheses are to be tested:
+		\[
+		H_0:\ \theta=1,\qquad
+		H_1:\ \theta=2.
+		\]
+		\begin{enumerate}
+			\item[(a)] Show that there exists a test procedure for which $\alpha(\delta)=0$ and $\beta(\delta)<1$.
+			\item[(b)] Among all test procedures for which $\alpha(\delta)=0$, find the one for which $\beta(\delta)$ is a minimum.
+		\end{enumerate}
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 9 (9.2.12)}
+		Let $X_1,\ldots,X_n$ be a random sample from the exponential distribution with unknown parameter $\theta$. Let $0<\theta_0<\theta_1$ be two possible values of the parameter. Suppose that we wish to test the following hypotheses:
+		\[
+		H_0:\ \theta=\theta_0,\qquad
+		H_1:\ \theta=\theta_1.
+		\]
+		For each $\alpha_0\in(0,1)$, show that among all tests $\delta$ satisfying $\alpha(\delta)\le\alpha_0$, the test with the smallest probability of type II error will reject $H_0$ if $\sum_{i=1}^n X_i<c$, where $c$ is the $\alpha_0$ quantile of the gamma distribution with parameters $n$ and $\theta_0$.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\section{9.5}
+		\subsection{Question 10 (9.5.2)}
+		Suppose that nine observations are selected at random from the normal distribution with unknown mean $\mu$ and unknown variance $\sigma^2$, and for these nine observations it is found that $\overline{X}_n=22$ and $\sum_{i=1}^n(X_i-\overline{X}_n)^2=72$.
+		\begin{enumerate}
+			\item[(a)] Carry out a test of the following hypotheses at the level of significance 0.05:
+			\[
+			H_0:\ \mu\le 20,\qquad
+			H_1:\ \mu>20.
+			\]
+			\item[(b)] Carry out a test of the following hypotheses at the level of significance 0.05 by using the two-sided $t$ test:
+			\[
+			H_0:\ \mu=20,\qquad
+			H_1:\ \mu\ne 20.
+			\]
+			\item[(c)] From the data, construct the observed confidence interval for $\mu$ with confidence coefficient 0.95.
+		\end{enumerate}
+
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 11 (9.5.4)}
+		Suppose that a random sample of eight observations $X_1,\ldots,X_8$ is taken from the normal distribution with unknown mean $\mu$ and unknown variance $\sigma^2$, and it is desired to test the following hypotheses:
+		\[
+		H_0:\ \mu=0,\qquad
+		H_1:\ \mu\ne 0.
+		\]
+		Suppose also that the sample data are such that $\sum_{i=1}^8 X_i=-11.2$ and $\sum_{i=1}^8 X_i^2=43.7$. If a symmetric $t$ test is performed at the level of significance 0.10 so that each tail of the critical region has probability 0.05, should the hypothesis $H_0$ be rejected or not?
+		
+		\textbf{Answer}
+		\clearpage
+		
+		
+		\subsection{Question 12 (9.5.6)}
+		Suppose that the variables $X_1,\ldots,X_n$ form a random sample from the normal distribution with unknown mean $\mu$ and unknown variance $\sigma^2$, and a $t$ test at a given level of significance $\alpha_0$ is to be carried out to test the following hypotheses:
+		\[
+		H_0:\ \mu\le\mu_0,\qquad
+		H_1:\ \mu>\mu_0.
+		\]
+		Let $\pi(\mu,\sigma^2\mid\delta)$ denote the power function of this $t$ test, and assume that $(\mu_1,\sigma_1^2)$ and $(\mu_2,\sigma_2^2)$ are values of the parameters such that
+		\[
+		\frac{\mu_1-\mu_0}{\sigma_1}=
+		\frac{\mu_2-\mu_0}{\sigma_2}.
+		\]
+		Show that $\pi(\mu_1,\sigma_1^2\mid\delta)=\pi(\mu_2,\sigma_2^2\mid\delta)$.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 13 (9.5.8)}
+		Suppose that the variables $X_1,\ldots,X_n$ form a random sample from the normal distribution with unknown mean $\mu$ and unknown variance $\sigma^2$. Let $\sigma_0^2$ be a given positive number, and suppose that it is desired to test the following hypotheses at a specified level of significance $\alpha_0$ $(0<\alpha_0<1)$:
+		\[
+		H_0:\ \sigma^2\le\sigma_0^2,\qquad
+		H_1:\ \sigma^2>\sigma_0^2.
+		\]
+		Let $S_n^2=\sum_{i=1}^n(X_i-\overline{X}_n)^2$, and suppose that the test procedure to be used specifies that $H_0$ should be rejected if $S_n^2/\sigma_0^2\ge c$. Also, let $\pi(\mu,\sigma^2\mid\delta)$ denote the power function of this procedure. Explain how to choose the constant $c$ so that, regardless of the value of $\mu$, the following requirements are satisfied: $\pi(\mu,\sigma^2\mid\delta)<\alpha_0$ if $\sigma^2<\sigma_0^2$, $\pi(\mu,\sigma^2\mid\delta)=\alpha_0$ if $\sigma^2=\sigma_0^2$, and $\pi(\mu,\sigma^2\mid\delta)>\alpha_0$ if $\sigma^2>\sigma_0^2$.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 14 (9.5.12)}
+		Suppose that a random sample $X_1,\ldots,X_n$ is to be taken from the normal distribution with unknown mean $\mu$ and unknown variance $\sigma^2$, and the following hypotheses are to be tested:
+		\[
+		H_0:\ \mu\le 3,\qquad
+		H_1:\ \mu>3.
+		\]
+		Suppose also that the sample size $n$ is $17$, and it is found from the observed values in the sample that $\overline{X}_n=3.2$ and
+		\[
+		(1/n)\sum_{i=1}^n (X_i-\overline{X}_n)^2 = 0.09.
+		\]
+		Calculate the value of the statistic $U$, and find the corresponding $p$-value.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 15 (9.5.14)}
+		Consider again the conditions of Exercise 12, but suppose now that the following hypotheses are to be tested:
+		\[
+		H_0:\ \mu=3.1,\qquad
+		H_1:\ \mu\ne 3.1.
+		\]
+		Suppose, as in Exercise 12, that the sample size $n$ is $17$, and it is found from the observed values in the sample that $\overline{X}_n=3.2$ and
+		\[
+		(1/n)\sum_{i=1}^n (X_i-\overline{X}_n)^2 = 0.09.
+		\]
+		Calculate the value of the statistic $U$ and find the corresponding $p$-value.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\section{9.6}
+		\subsection{Question 16 (9.6.4)}
+		Suppose that $X_1,\ldots,X_m$ form a random sample from the normal distribution with mean $\mu_1$ and variance $\sigma_1^2$, and $Y_1,\ldots,Y_n$ form an independent random sample from the normal distribution with mean $\mu_2$ and variance $\sigma_2^2$. Show that if $\mu_1=\mu_2$ and $\sigma_2^2=k\sigma_1^2$, then the random variable $U$ defined by Eq.\ (9.6.13) has the $t$ distribution with $m+n-2$ degrees of freedom.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 17 (9.6.6)}
+		Suppose that $X_1,\ldots,X_m$ form a random sample from the normal distribution with unknown mean $\mu_1$ and unknown variance $\sigma^2$, and $Y_1,\ldots,Y_n$ form an independent random sample from another normal distribution with unknown mean $\mu_2$ and the same unknown variance $\sigma^2$. For each constant $\lambda$ ($-\infty<\lambda<\infty$), construct a $t$ test of the following hypotheses with $m+n-2$ degrees of freedom:
+		\[
+		H_0:\ \mu_1-\mu_2=\lambda,\qquad
+		H_1:\ \mu_1-\mu_2\ne\lambda.
+		\]
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\section{9.7}
+		\subsection{Question 18 (9.7.4)}
+		Suppose that a random variable $X$ has the $F$ distribution with $m$ and $n$ degrees of freedom ($n>2$). Show that
+		\[
+		E(X)=\frac{n}{n-2}.
+		\]
+		\textit{Hint: Find the value of $E(1/Z)$, where $Z$ has the $\chi^2$ distribution with $n$ degrees of freedom.}
+		
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 19 (9.7.6)}
+		Suppose that a random variable $X$ has the $F$ distribution with $m$ and $n$ degrees of freedom. Show that the random variable
+		\[
+		\frac{mX}{mX+n}
+		\]
+		has the beta distribution with parameters $\alpha=m/2$ and $\beta=n/2$.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 20 (9.7.8)}
+		Consider again the conditions of Exercise 7, but suppose now that it is desired to test the following hypotheses:
+		\[
+		H_0:\ \sigma_1^2\le 3\sigma_2^2,\qquad
+		H_1:\ \sigma_1^2>3\sigma_2^2.
+		\]
+		Describe how to carry out an $F$ test of these hypotheses.
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 21 (9.7.10)}
+		Suppose that a random sample consisting of 16 observations is available from the normal distribution for which both the mean $\mu_1$ and the variance $\sigma_1^2$ are unknown, and an independent random sample consisting of 10 observations is available from the normal distribution for which both the mean $\mu_2$ and the variance $\sigma_2^2$ are also unknown.
+		\[
+		\text{For each constant } r>0,\ \text{construct a test of the following hypotheses at the level of significance }0.05:
+		\]
+		\[
+		H_0:\ \frac{\sigma_1^2}{\sigma_2^2}=r,\qquad
+		H_1:\ \frac{\sigma_1^2}{\sigma_2^2}\ne r.
+		\]
+		
+		\textbf{Answer}
+		\clearpage
+		
+		\subsection{Question 22 (9.7.16)}
+		Let $V$ be as defined in Eq.\ (9.7.4). We wish to determine the size $\alpha_0$ likelihood ratio test of the hypotheses (9.7.7). Prove that the likelihood ratio test will reject $H_0$ if either $V \le c_1$ or $V \ge c_2$, where
+		\[
+		\Pr(V \le c_1) + \Pr(V \ge c_2) = \alpha_0
+		\]
+		when $\sigma_1^2 = \sigma_2^2$.
+		
+		\textbf{Answer}
+		\clearpage
+		
+	\end{document}
