@@ -1,0 +1,305 @@
+\documentclass[letterpaper]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+\DeclareMathOperator{\Var}{Var}
+\usepackage[dvipsnames]{xcolor}
+\colorlet{LightRubineRed}{RubineRed!70}
+\colorlet{Mycolor1}{green!10!orange}
+\definecolor{Mycolor2}{HTML}{00F9DE}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{capt-of}
+\usepackage{lipsum}
+\usepackage{fancyvrb}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{capt-of}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{hyperref} 
+\usepackage{xcolor} % For custom colors
+\lstset{
+	language=Python,                % Choose the language (e.g., Python, C, R)
+	basicstyle=\ttfamily\small, % Font size and type
+	keywordstyle=\color{blue},  % Keywords color
+	commentstyle=\color{gray},  % Comments color
+	stringstyle=\color{red},    % String color
+	numbers=left,               % Line numbers
+	numberstyle=\tiny\color{gray}, % Line number style
+	stepnumber=1,               % Numbering step
+	breaklines=true,            % Auto line break
+	backgroundcolor=\color{black!5}, % Light gray background
+	frame=single,               % Frame around the code
+}
+\usepackage{float}
+\usepackage[]{amsthm} %lets us use \begin{proof}
+\usepackage[]{amssymb} %gives us the character \varnothing
+
+	\title{Homework 4, STAT 5504}
+	\author{Zongyi Liu}
+	\date{Mon, Dec 8, 2025}
+	\begin{document}
+		\maketitle
+		
+		\section{11.1}
+		\subsection{Question 1 (11.1.2)}
+		
+		Show that the value of $\hat\beta_1$ in Eq.\ (11.1.1) can be rewritten in
+		each of the following three forms:
+		\[
+		\text{(a)}\quad 
+		\hat\beta_1 = 
+		\frac{\displaystyle\sum_{i=1}^n x_i y_i - n\bar x \bar y}
+		{\displaystyle\sum_{i=1}^n x_i^2 - n\bar x^{\,2}},
+		\qquad
+		\text{(b)}\quad
+		\hat\beta_1 =
+		\frac{\displaystyle\sum_{i=1}^n (x_i-\bar x)y_i}
+		{\displaystyle\sum_{i=1}^n (x_i-\bar x)^2},
+		\qquad
+		\text{(c)}\quad
+		\hat\beta_1 =
+		\frac{\displaystyle\sum_{i=1}^n x_i (y_i-\bar y)}
+		{\displaystyle\sum_{i=1}^n (x_i-\bar x)^2}.
+		\]
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		\subsection{Question 2 (11.1.4)}
+		
+		For $i = 1,\ldots,n$, let $\hat{y}_i = \beta_0 + \beta_1 x_i$. Show that $\hat{\beta}_0$
+		and $\hat{\beta}_1$, as given by Eq.\ (11.1.1), are the unique values of $\beta_0$
+		and $\beta_1$ such that
+		\[
+		\sum_{i=1}^n (y_i - \hat{y}_i) = 0
+		\qquad\text{and}\qquad
+		\sum_{i=1}^n x_i (y_i - \hat{y}_i) = 0.
+		\]
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		\section{11.2}
+		\subsection{Question 3 (11.2.6)}
+		
+		Show that in a problem of simple linear regression, the estimators 
+		$\hat{\beta}_0$ and $\hat{\beta}_1$ will be independent if $\bar{x} = 0$.
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		\subsection{Question 4 (11.2.12)}
+		Consider a problem of simple linear regression in which the durability $Y$
+		of a certain type of alloy is to be related to the temperature $X$ at which it
+		was produced. Suppose that the eight pairs of observed values given in
+		Table~11.3 are obtained. Determine the values of the M.L.E.'s 
+		$\hat{\beta}_0$, $\hat{\beta}_1$, and $\hat{\sigma}^2$, and also the values of
+		$\operatorname{Var}(\hat{\beta}_0)$ and $\operatorname{Var}(\hat{\beta}_1)$.
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		\subsection{Question 5 (11.2.14)}
+		Consider again the conditions of Exercise~12, and suppose that it is 
+		desired to estimate the value of $\theta = 5 - 4\beta_0 + \beta_1$.  Find an
+		unbiased estimator $\hat{\theta}$ of $\theta$.  Determine the value of 
+		$\hat{\theta}$ and the M.S.E.\ of $\hat{\theta}$.
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		\section{11.3}
+		\subsection{Question 6 (11.3.2)}
+		
+		For the data presented in Table~11.9, test at the level of significance
+		$0.05$ the hypothesis that the regression line passes through the origin in the
+		$xy$-plane.
+		
+		\begin{table}[h!]
+
+			\centering
+			\caption{Data for Exercise }
+			\begin{tabular}{c c c  c c c}
+				\hline
+				$i$ & $x_i$ & $y_i$ & $i$ & $x_i$ & $y_i$ \\
+				\hline
+				1 & 0.3 & 0.4 & 6 & 1.0 & 0.8 \\
+				2 & 1.4 & 0.9 & 7 & 2.0 & 0.7 \\
+				3 & 1.0 & 0.4 & 8 & -1.0 & -0.4 \\
+				4 & -0.3 & -0.3 & 9 & -0.7 & -0.2 \\
+				5 & -0.2 & 0.3 & 10 & 0.7 & 0.7 \\
+				\hline
+			\end{tabular}
+		\end{table}
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		
+		\subsection{Question 7 (11.3.4)}
+		
+		For the data presented in Table~11.9, test at the level of significance
+		$0.05$ the hypothesis that the regression line is horizontal.
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		
+		\subsection{Question 8 (11.3.6)}
+		
+		For the data presented in Table~11.9, test the hypothesis that when
+		$x = 1$, the height of the regression line is $y = 1$ at the level of
+		significance $0.01$.
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		\subsection{Question 9 (11.3.10)}
+		
+		For the data presented in Table~11.9, construct a confidence interval for
+		$\beta_0$ with confidence coefficient $0.95$.
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		
+		\subsection{Question 10 (11.3.12)}
+		
+		For the data presented in Table~11.9, construct a confidence interval for
+		$5\beta_0 - \beta_1 + 4$ with confidence coefficient $0.90$.
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		\subsection{Question 11 (11.3.14)}
+		
+		For the data presented in Table~11.9, construct a confidence interval with
+		confidence coefficient $0.99$ for the height of the regression line at the
+		point $x = 0.42$.
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		\subsection{Question 12 (11.3.16)}
+		
+		Let the statistic $U^2$ be as defined by Eq.\ (11.3.32), and let $\gamma$ be
+		a fixed positive constant. Show that for all observed values $(x_i, y_i)$, for
+		$i = 1,\ldots,n$, the set of points $(\beta_0^*, \beta_1^*)$ such that
+		$U^2 < \gamma$ is the interior of an ellipse in the $\beta_0^* \beta_1^*$-plane.
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		\subsection{Question 13 (11.3.18)}
+	\begin{enumerate}
+		\item[a.] For the data presented in Table~11.9, sketch a confidence band in the
+		$xy$-plane for the regression line with confidence coefficient $0.95$.
+		
+		\item[b.] On the same graph, sketch the curves which specify the limits at each
+		point $x$ of a confidence interval with confidence coefficient $0.95$ for the
+		value of the regression line at the point $x$.
+	\end{enumerate}
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		\subsection{Question 14 (11.3.20)}
+		
+		Suppose that a simple linear regression of miles per gallon $(Y)$ on car
+		weight $(X)$ has been performed with $n = 32$ observations. Suppose that the
+		least-squares estimates are $\hat{\beta}_0 = 68.17$ and $\hat{\beta}_1 = -1.112$,
+		with $\sigma' = 4.281$. Other useful statistics are $\bar{x} = 30.91$, and
+		$\sum_{i=1}^n (x_i - \bar{x})^2 = 2054.8$.
+		\begin{enumerate}
+			\item[a.] Suppose that we want to predict miles per gallon $Y$ for a new observation
+			with weight $X = 24$. What would be our prediction?
+			
+			\item[b.] For the prediction in part (a), find a $95$ percent prediction interval
+			for the unobserved $Y$ value.
+		\end{enumerate}
+		
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		\subsection{Question 15 (11.3.22)}
+		Perform a least-squares regression of the logarithm of the 1980 fish price
+		on the 1970 fish price, using the raw data in Table~11.6 on page~707.
+		\begin{enumerate}
+			\item[a.] Test the null hypothesis that the slope $\beta_1$ is less than $2.0$
+			at level $\alpha_0 = 0.01$.
+			
+			\item[b.] Find a $90$ percent confidence interval for the slope $\beta_1$.
+			
+			\item[c.] Find a $90$ percent prediction interval for the 1980 price of a species
+			that cost $21.4$ in 1970. (Note that $21.4$ is the 1970 price, \emph{not} the
+			logarithm of the 1970 price.)
+		\end{enumerate}
+		
+		\textbf{Answer}
+		
+		
+		\clearpage
+		
+		
+	\end{document}
